@@ -1,4 +1,33 @@
+body {
+	margin: 0;
+}
+
 .main-wrp {
 	display: grid;
-	grid-template-columns: 66% 34%;
+	grid-template-columns: 66% calc(34% - 10px);
+	grid-gap: 10px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(100px, 1fr));
+	grid-template-rows: repeat(3, minmax(100px, max-content));
+	grid-gap: 10px;
+}
+
+.main-card {
+	background-color: grey;
+}
+
+header {
+	background-color: green;
+}
+
+aside {
+	background-color: blue;
+}
+
+footer {
+	display: block;
+	background-color: magenta;
 }
