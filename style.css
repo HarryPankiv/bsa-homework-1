@@ -1,33 +1,87 @@
 body {
 	margin: 0;
+	font-family: 'Merriweather', serif;	
 }
+
+a {
+	text-decoration: none;
+}
+
+input[type="search"] {
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid white;
+}
+
+
 
 .main-wrp {
 	display: grid;
-	grid-template-columns: 66% calc(34% - 10px);
-	grid-gap: 10px;
+	grid-template-columns: 70% 30%;
+	background-color: #546e7a; 
 }
 
 main {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 	grid-template-rows: repeat(3, minmax(100px, max-content));
 	grid-gap: 10px;
 }
 
 .main-card {
-	background-color: grey;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #ff9800;
 }
 
 header {
-	background-color: green;
+	background-color: #263238;
+	color: white;
 }
 
 aside {
-	background-color: blue;
+	background-color: #f68948;
 }
 
 footer {
 	display: block;
-	background-color: magenta;
+}
+
+.logo {
+	position: absolute;
+	font-size: 50px;
+	margin: 0;
+}
+
+.nav-search {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0px;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.navbar li {
+	display: inline;
+	margin: 10px;
+}
+
+.social-item img {
+	max-width: 40px;
+	max-height: 40px;
+}
+
+.social-item {
+	display: inline;
+}
+
+@media screen and (max-width: 600px) {
+    
 }
