@@ -37,3 +37,9 @@ main {
 	max-width: 30px;
 	max-height: 30px;
 }
+
+.main-likes {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
