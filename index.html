@@ -4,125 +4,161 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Harry's Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="input-style.css">
+	<link rel="stylesheet" type="text/css" href="header-style.css">
+	<link rel="stylesheet" type="text/css" href="aside-style.css">
+	<link rel="stylesheet" type="text/css" href="main-style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
-		<h3 class="logo">logo</h3>
+		<nav role="navigation">
+		  <div id="menuToggle">
 
-		<div class="nav-search">
-			<div class="social-item">
-				<a href="https://github.com/harrypankiv" target="_blank">
-					<img src="./assets/github-amber.png" alt="github">
-				</a>
+		    <input type="checkbox" />
+
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		    
+		    <ul id="menu">
+		      <a href="#"><li>Blog</li></a>
+		      <a href="#"><li>Artists</li></a>
+		      <a href="#"><li>About</li></a>
+		      <a href="#"><li>Contact</li></a>
+		    </ul>
+		  </div>
+		</nav>
+		
+		<a href=""><img class="logo" src="./assets/blog-logo.svg" alt="logo"></a>
+
+		<div class="nav-row">
+			<div class="quote">
+				<p><q>Where words fail, music speaks</q></p>
+				<p>Hans Christian Andersen</p>
 			</div>
+			<div class="container">
+				<div class="social-item">
+					<a href="https://github.com/harrypankiv" target="_blank">
+						<img src="./assets/github-amber.png" alt="github">
+					</a>
+				</div>
 
-			<div class="social-item">
-				<a href="https://www.instagram.com/still.same.harry/" target="_blank">
-					<img src="./assets/instagram-amber.png" alt="instagram">
-				</a>
+				<div class="social-item">
+					<a href="https://www.instagram.com/still.same.harry/" target="_blank">
+						<img src="./assets/instagram-amber.png" alt="instagram">
+					</a>
+				</div>
+
+				<div class="social-item">
+					<a href="https://www.facebook.com/harry.pankiv" target="_blank">
+						<img src="./assets/facebook-amber.png" alt="facebook">
+					</a>
+				</div>
+
+				<div class="social-item">
+					<a href="https://www.linkedin.com/in/ihor-pankiv-869b95135/" target="_blank">
+						<img src="./assets/linkedin-amber.png" alt="linkedin">
+					</a>
+				</div>
 			</div>
-
-			<div class="social-item">
-				<a href="https://www.facebook.com/harry.pankiv" target="_blank">
-					<img src="./assets/facebook-amber.png" alt="facebook">
-				</a>
+			
+			<div class="container">
+				<input type="search" name="search" placeholder="search">
 			</div>
-
-			<div class="social-item">
-				<a href="https://www.linkedin.com/in/ihor-pankiv-869b95135/" target="_blank">
-					<img src="./assets/linkedin-amber.png" alt="linkedin">
-				</a>
-			</div>
-
-			<input type="search" name="search">
 		</div>
 
 		<ul class="navbar">
-			<li><a href="">op1</a></li>
-			<li><a href="">op2</a></li>
-			<li><a href="">op3</a></li>
-			<li><a href="">op4</a></li>
+			<li><a href="">blog</a></li>
+			<li><a href="">artists</a></li>
+			<li><a href="">about</a></li>
+			<li><a href="">contact</a></li>
 		</ul>
 	</header>
-	<div class="main-wrp">
+	<div class="content">
 		<main>
 			<div class="main-card">
-				<h3>title 1</h3>
-				<img class="card-img" src="./assets/neighbourhood.jpg" alt="pic1">
-				<p>card1</p>
-				<img class="social-icon" src="./assets/heart.png" alt="low poly heart icon">
-				<span>15</span>
-				<span>10 comments</span>
+				<h3>Downtempo Playlist #1</h3>
+				<img src="./assets/neighbourhood.jpg" alt="pic1">
+				<p><a href="https://www.youtube.com/watch?v=eH4F1Tdb040">Stephen - Crossfire</a></p>
+				<p><a href="https://www.youtube.com/watch?v=d2fzRdbjQu0">Stephen - Start a Fire</a></p>
+				<p><a href="https://www.youtube.com/watch?v=uPy5igZJnVw">Chet Faker - I'm Into You</a></p>
+				<img class="social-icon" src="./assets/heart.png" alt="heart icon">
+				<span>27</span>
+				<span>13 comments</span>
 			</div>
 			<div class="main-card">
-				<h3>title 2</h3>
-				<img class="card-img" src="./assets/neighbourhood.jpg" alt="pic2">
-				<p>card2</p>
-				<img class="social-icon" src="./assets/heart.png" alt="low poly heart icon">
+				<h3>EDM Playlist #1</h3>
+				<img src="./assets/neighbourhood.jpg" alt="pic2">
+				<p><a href="https://www.youtube.com/watch?v=cHHLHGNpCSA">Avicii - Waiting For Love</a></p>
+				<p><a href="https://www.youtube.com/watch?v=Qc9c12q3mrc">Avicii ft. Adele - Addicted To You</a></p>
+				<p><a href="https://www.youtube.com/watch?v=WRz2MxhAdJo">Avicii ft. Sandro Cavazza - Without You</a></p>
+				<img class="social-icon" src="./assets/heart.png" alt="heart icon">
 				<span>15</span>
-				<span>10 comments</span>
+				<span>3 comments</span>
 			</div>
 			<div class="main-card">
-				<h3>title 3</h3>
-				<img class="card-img" src="./assets/neighbourhood.jpg" alt="pic3">
-				<p>card3</p>
-				<img class="social-icon" src="./assets/heart.png" alt="low poly heart icon">
-				<span>15</span>
-				<span>10 comments</span>
+				<h3>Classical Playlist #1</h3>
+				<img src="./assets/neighbourhood.jpg" alt="pic3">
+				<p><a href="https://www.youtube.com/watch?v=mH4yaHFaGU4">Ludovico Einaudi - Night</a></p>
+				<p><a href="https://www.youtube.com/watch?v=__LU8E6dUsI">Pirates of the Caribbean Orchestral Medley</a></p>
+				<p><a href="https://www.youtube.com/watch?v=aCFnzSCzoYA">Queen - Bohemian Rhapsody for Symphony Orchestra</a></p>
+				<img class="social-icon" src="./assets/heart.png" alt="heart icon">
+				<span>9</span>
+				<span>1 comment</span>
 			</div>
 			<div class="main-card">
-				<h3>title 4</h3>
-				<img class="card-img" src="./assets/neighbourhood.jpg" alt="pic4">
-				<p>card4</p>
-				<img class="social-icon" src="./assets/heart.png" alt="low poly heart icon">
-				<span>15</span>
+				<h3>Rock Playlist #1</h3>
+				<img src="./assets/neighbourhood.jpg" alt="pic4">
+				<p><a href="https://www.youtube.com/watch?v=NcXsK_u4ixI">Kaleo - I Can't Go on Without You</a></p>
+				<p><a href="https://www.youtube.com/watch?v=S6Nt1ssPLBA">Nothing But Thieves - Broken Machine</a></p>
+				<p><a href="https://www.youtube.com/watch?v=dOpyrF6UEl4">Nothing But Thieves - Trip Switch</a></p>
+				<img class="social-icon" src="./assets/heart.png" alt="heart icon">
+				<span>22</span>
 				<span>10 comments</span>
 			</div>
 		</main>
 		<aside>
-			<img src="./assets/chet-faker.jpg" width="300px">
-			<h3>Chet Faker</h3>
-			<p>Nicholas James Murphy (born 23 June 1988), formerly known by his stage name Chet Faker, is an Australian singer and songwriter.</p>
-			<div class="social-item">
-				<a href="https://twitter.com/nick_murphy" target="_blank">
-					<img src="./assets/twitter.png" alt="twitter">
-				</a>
+			<div>
+				<img class="author" src="./assets/chet-faker.jpg">
+				<h3>Chet Faker</h3>
+				<p>Nicholas James Murphy (born 23 June 1988), formerly known by his stage name Chet Faker, is an Australian singer and songwriter.</p>
+				<div class="social-item">
+					<a href="https://twitter.com/nick_murphy" target="_blank">
+						<img src="./assets/twitter.png" alt="twitter">
+					</a>
+				</div>
 			</div>
 
-			<form>
-				<input type="text" name="name">
-				<input type="email" name="email">
-				<input type="submit" name="subscribe" value="subscribe">
+			<form class="container">
+				<input class="form-input" type="text" name="name" placeholder="name">
+				<input class="form-input" type="email" name="email" placeholder="email">
+				<input class="form-input" type="submit" name="subscribe" value="subscribe">
 			</form>
 
-			<input type="search" name="">
-
-			<!-- must be centered -->
-			<div class="aside-tags">
-				<span>tag #1</span>
-				<span>tag #2</span>
-				<span>tag #3</span>
-				<span>tag #4</span>
-				<span>tag #5</span>
+			<div class="container">
+				<input type="search" name="" placeholder="search">
 			</div>
 
-			<div class="aside-profile">
-				<img src="" alt="profile pic">
+			<div class="aside-tags">
+				<span><a href="">#music</a></span>
+				<span><a href="">#guitar</a></span>
+				<span><a href="">#chill</a></span>
+				<span><a href="">#edm</a></span>
+				<span><a href="">#classical</a></span>
+			</div>
+
+			<div class="aside-comment">
+				<img class="comment" src="assets/profile.jpeg" alt="profile image">
 				<div>
-					<h5>Harry</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h3>Harry</h3>
+					<p>I like downtempo music</p>
 				</div>
 			</div>
 		</aside>
 	</div>
 	<footer>
-		footer section
+		<p>© Hometask #1. Git. Binary Studio Academy'18</p>
 	</footer>
 </body>
 </html>

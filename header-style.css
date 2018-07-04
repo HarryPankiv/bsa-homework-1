@@ -1,0 +1,59 @@
+header {
+	background-color: #263238;
+	color: white;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s ease;
+}
+
+header a:hover {
+	color: #ffc107;
+}
+
+nav {
+	display: none;
+}
+
+.logo {
+	max-height: 90px;
+	max-width: 150px; 
+	position: absolute;
+	font-size: 50px;
+	margin: 0;
+	left: 0;
+}
+
+.logo:hover {
+	filter: brightness(120%);
+	transition: filter 1s;
+}
+
+.nav-row {
+	margin: 0 0 0 15%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-row input {
+	color: white;
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px;
+	padding: 0;
+}
+
+.navbar li {
+	display: inline;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.quote {
+	margin-left: 30px;
+}
