@@ -5,6 +5,8 @@ body {
 }
 
 .content {
+	max-width: 1200px;
+	margin: auto;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 }
@@ -14,6 +16,19 @@ footer {
 	padding: 30px;
 	background-color: #263238; 
 	color: white;
+}
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate:hover {
+	white-space: initial;
+	overflow: initial;
+	text-overflow: initial;
 }
 
 @media screen and (max-width: 800px) {
