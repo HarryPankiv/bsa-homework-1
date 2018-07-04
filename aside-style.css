@@ -55,15 +55,6 @@ aside a:hover {
 	color: #ffc107;
 }
 
-.social-item {
-	display: inline;
-}
-
-.social-icon {
-	max-width: 30px;
-	max-height: 30px;
-}
-
 .container {
 	margin: 10px;
 }
